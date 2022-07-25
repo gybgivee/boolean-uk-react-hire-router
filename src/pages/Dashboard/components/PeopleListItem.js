@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
 function PeopleListItem(props) {
   const { person } = props
-
+ 
   return (
+
     <li>
-      <h3>
+      <Link to={`/person/${person.email}`} state={{ person }}>
         {person.name.first} {person.name.last}
-      </h3>
+      </Link>
       {person.wage && <p>Wage: £{person.wage}</p>}
     </li>
+
+
   )
 }
 
