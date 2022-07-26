@@ -25,6 +25,7 @@ console.log('hiredPeople', hiredPeople);
   }
 
   console.log('people', people);
+  //A React => element to render when the route is matched.
   return (
     <>
       <header>
